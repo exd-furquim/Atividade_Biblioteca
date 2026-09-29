@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>Cadastro de usuário</h1>
-        <p class="substituto">Crie sua conta para acessar o sistema da biblioteca</p>
+        <p class="substitulo">Crie sua conta para acessar o sistema da biblioteca</p>
 
         <?php
         if (isset($_GET['erro']) && $_GET['erro'] === 'email') {
@@ -34,12 +34,13 @@
             </div>
             <button type="submit" class="btn btn-block">Cadastrar</button>
         </form>
-    </div class="nav-links">
-    <p><a href="login.php">Já tem uma conta? Faça login aqui.</a></p>
     </div>
-    <a href="login.php" class="btn btn-voltar">voltar para login</a>
+    <div class="nav-links">
+        <p><a href="cadastro.php">Não tem uma conta? Cadastra-se.</a></p>
+    </div>
+    <a href="cadastro.php" class="btn btn-voltar">voltar para Cadastro</a>
     <div class="dica-navegacao">
-        <strong>Fluxo:</strong> Cadastro → login → Painel → Gerenciador Livros
+        <strong>Fluxo:</strong> login → Painel → Cadastrar ou Listar Livros
     </div>
 </body>
 
